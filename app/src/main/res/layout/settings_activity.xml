@@ -67,7 +67,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="355dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
@@ -83,7 +83,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="355dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
@@ -98,7 +98,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="355dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
@@ -156,7 +156,8 @@
         android:background="@android:color/transparent"
         android:fontFamily="@font/abeezee"
         android:text="Done"
-        android:textColor="#03A9F4" />
+        android:textColor="#03A9F4"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -187,7 +188,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="354dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="262dp"
@@ -200,17 +201,18 @@
 
     <Button
         android:id="@+id/signoutButton"
-        android:layout_width="wrap_content"
+        android:layout_width="355dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="151dp"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="83dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/edit_button_border"
         android:fontFamily="@font/abeezee"
         android:text="Sign Out"
-        android:textColor="#03A9F4" />
+        android:textColor="#03A9F4"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView"
@@ -223,5 +225,4 @@
         android:text="Change Avatar"
         android:textColor="#03A9F4"
         android:textSize="16sp" />
-
 </RelativeLayout>
