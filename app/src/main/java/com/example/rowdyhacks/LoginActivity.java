@@ -31,6 +31,7 @@ public class LoginActivity extends Activity {
                 Log.i(TAG, "onClick login button");
                 String username = userText.getText().toString();
                 String password = pwdText.getText().toString();
+                //prob need to parse the info maybe in the go method or here
                 goMainActivity();
             }
         });
