@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+//import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
     Button tvBtn;
-    SwipeRefreshLayout swipeContainer;
+//    SwipeRefreshLayout swipeContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tvBtn = findViewById(R.id.tvBtn);
 
-        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                Log.i(TAG, "fetching new data!");
-                //populateItemRows();
-            }
-        });
+//        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+//            @Override
+//            public void onRefresh() {
+//                Log.i(TAG, "fetching new data!");
+//                //populateItemRows();
+//            }
+//        });
     }
 
     /*private void goSignUpActivity() {
