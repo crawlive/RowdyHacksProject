@@ -1,5 +1,6 @@
 package com.example.rowdyhacks;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,10 +18,10 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        if (userText != null) {
-            goMainActivity();
-        }
+        setContentView(R.layout.login);
+        //if (userText != null) {
+        //goMainActivity();
+        //}
         signUp = findViewById(R.id.signUp);
         userText = findViewById(R.id.userText);
         pwdText = findViewById(R.id.pwdText);
@@ -28,30 +29,40 @@ public class LoginActivity extends Activity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i(TAG, "onClick login button");
-                String username = userText.getText().toString();
-                String password = pwdText.getText().toString();
+                    Log.i(TAG, "`onClick` login button");
+                Intent myIntent = new Intent(LoginActivity.this, MainActivity.class);
+                myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(myIntent);
+                //String username = userText.getText().toString();
+                //String password = pwdText.getText().toString();
                 //prob need to parse the info maybe in the go method or here
-                goMainActivity();
+                //goMainActivity();
             }
         });
+
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, "onClick sign up button");
-                goSignUpActivity();
+                Intent myIntent = new Intent(LoginActivity.this, SignupActivity.class);
+                myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(myIntent);
+
+                //goSignUpActivity();
             }
         });
     }
 
     private void goMainActivity() {
         Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
+        //startActivity(i);
+        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
         finish();
     }
     private void goSignUpActivity() {
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
+        Intent i = new Intent(this, SignupActivity.class);
+        //startActivity(i);
+        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
         finish();
     }
 }

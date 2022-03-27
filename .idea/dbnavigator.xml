@@ -27,15 +27,15 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="aba7b605-c67b-4f62-84a9-cce6bada31fc">
-      <console name="Lang-App" type="STANDARD" schema="crdb_internal" session="Main" />
+    <connection id="129d1c7a-9d3e-48aa-ae83-47cbbd9df224">
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="aba7b605-c67b-4f62-84a9-cce6bada31fc" />
+    <connection id="129d1c7a-9d3e-48aa-ae83-47cbbd9df224" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -66,9 +66,9 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="aba7b605-c67b-4f62-84a9-cce6bada31fc" active="true" signed="false">
+      <connection id="129d1c7a-9d3e-48aa-ae83-47cbbd9df224" active="true" signed="true">
         <database>
-          <name value="Lang-App" />
+          <name value="Connection" />
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -77,12 +77,12 @@
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="free-tier4.aws-us-west-2.cockroachlabs.cloud" />
+          <host value="free-tier.gcp-us-central1.cockroachlabs.cloud" />
           <port value="26257" />
-          <database value="lang-app-2626.defaultdb" />
+          <database value="lang-app-5714.defaultdb" />
           <type value="USER_PASSWORD" />
           <user value="bethany" />
-          <deprecated-pwd value="SnJTZ09UWHFybDhzVmlYTng2bjZrdw==" />
+          <deprecated-pwd value="bGRwa0xWYk5tU1FMQXVFY0JUbFNIQQ==" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -107,10 +107,10 @@
           <charset value="UTF-8" />
           <session-management value="true" />
           <ddl-file-binding value="true" />
-          <database-logging value="true" />
+          <database-logging value="false" />
           <connect-automatically value="true" />
           <restore-workspace value="true" />
-          <restore-workspace-deep value="false" />
+          <restore-workspace-deep value="true" />
           <environment-type value="default" />
           <connectivity-timeout value="5" />
           <idle-time-to-disconnect value="30" />

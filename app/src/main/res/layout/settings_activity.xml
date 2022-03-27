@@ -1,13 +1,18 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#13232E">
-    <![CDATA[
+    android:background="#13232E"><![CDATA[
+
         android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
+
+
+
+
 
 
 
@@ -31,8 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="497dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="472dp"
         android:fontFamily="@font/abeezee"
         android:text="Password"
         android:textColor="#3F6371"
@@ -44,8 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="413dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="385dp"
         android:fontFamily="@font/abeezee"
         android:text="Email"
         android:textColor="#3F6371"
@@ -57,8 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="322dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="293dp"
         android:fontFamily="@font/abeezee"
         android:text="Username"
         android:textColor="#3F6371"
@@ -67,12 +73,12 @@
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="355dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="523dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="501dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/edit_text_border"
         android:ems="10"
         android:fontFamily="@font/abeezee"
@@ -83,12 +89,12 @@
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="355dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="440dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/edit_text_border"
         android:ems="10"
         android:fontFamily="@font/abeezee"
@@ -98,12 +104,12 @@
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="355dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="349dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/edit_text_border"
         android:ems="10"
         android:fontFamily="@font/abeezee"
@@ -141,9 +147,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="105dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="78dp"
+        tools:srcCompat="@drawable/kirby" />
 
     <Button
         android:id="@+id/doneButton"
@@ -165,8 +171,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="62dp"
         android:fontFamily="@font/abeezee"
         android:text="Your profile"
         android:textColor="#FFFFFF"
@@ -178,8 +184,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="201dp"
         android:fontFamily="@font/abeezee"
         android:text="Name"
         android:textColor="#3F6371"
@@ -188,11 +194,12 @@
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="354dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="262dp"
-        android:layout_marginEnd="27dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/edit_text_border"
         android:ems="10"
         android:fontFamily="@font/abeezee"
@@ -206,8 +213,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="83dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="4dp"
         android:background="@drawable/edit_button_border"
         android:fontFamily="@font/abeezee"
         android:text="Sign Out"
@@ -220,9 +227,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="169dp"
         android:fontFamily="@font/abeezee"
         android:text="Change Avatar"
         android:textColor="#03A9F4"
         android:textSize="16sp" />
+
 </RelativeLayout>

@@ -1,45 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LearnLang"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="bottom"
-    android:orientation="vertical"
-    tools:context="SignupActivity">
+    android:background="#13232E"
+    tools:context=".SignupActivity">
 
-    <TextView
-        android:id="@+id/createnewac"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        tools:text="Create a new Account!" />
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="First Name"
+        android:textColor="#3F6371" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="408dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="Last Name"
+        android:textColor="#3F6371" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="226dp"
+        android:background="@drawable/edit_text_border"
         android:ems="10"
         android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#3F6371" />
 
-        android:inputType="textEmailAddress" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="370dp"
+        android:fontFamily="@font/abeezee"
+        android:text="Select The Language You Know"
+        android:textColor="#3F6371"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/knownlang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="1dp"
+
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="446dp"
+        android:fontFamily="@font/abeezee"
+        android:text="Select The Language You Want To Learn"
+        android:textColor="#3F6371"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/learnlang"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="0dp"
+
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
 
     <EditText
         android:id="@+id/passwd"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="255dp"
+        android:background="@drawable/edit_text_border"
         android:ems="10"
-        android:hint="Password" />
+        android:hint="Password"
+        android:textColor="#3F6371" />
 
     <Button
         android:id="@+id/logIn"
-        android:layout_width="match_parent"
-        android:layout_height="93dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="533dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/edit_button_border"
+        android:fontFamily="@font/abeezee"
         android:textAllCaps="false"
+        android:textSize="18sp"
         tools:text="Create New Account" />
 
-</LinearLayout>
+</RelativeLayout>
