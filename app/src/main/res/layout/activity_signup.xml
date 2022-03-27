@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LearnLang"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#13232E"
@@ -22,6 +23,20 @@
         tools:text="Create a new Account!" />
 
     <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="Last Name" />
+
+    <EditText
         android:id="@+id/email"
         android:layout_width="354dp"
         android:layout_height="48dp"
@@ -34,6 +49,31 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select The Language You Know" />
+
+    <Spinner
+        android:id="@+id/knownlang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select The Language You Want To Learn" />
+
+    <Spinner
+        android:id="@+id/learnlang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
 
     <EditText
         android:id="@+id/passwd"

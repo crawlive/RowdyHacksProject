@@ -29,7 +29,7 @@ public class LoginActivity extends Activity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i(TAG, "onClick login button");
+                    Log.i(TAG, "`onClick` login button");
                 Intent myIntent = new Intent(LoginActivity.this, MainActivity.class);
                 myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(myIntent);

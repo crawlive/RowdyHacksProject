@@ -41,7 +41,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     @Override
     public int getItemCount() {
-        return mHistory == null ? 0: mHistory.size();
+
+        return mHistory.size();
     }
 
     @Override
@@ -67,5 +68,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         String item = mHistory.get(position);
         viewHolder.tvItem.setText(item);
         //viewHolder.tvBtn.setText(item);
+    }
+    private void setUpAdapter(){
+
     }
 }
