@@ -69,9 +69,9 @@
         android:layout_marginStart="101dp"
         android:layout_marginTop="194dp"
         android:fontFamily="@font/abeezee"
-        android:text="What's your first name?"
+        android:text="What's your email?"
         android:textColor="#3F6371"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -96,7 +96,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="282dp"
+        android:layout_marginTop="291dp"
         android:background="@drawable/edit_button_border"
         android:text="OK ✓"
         android:textSize="16sp" />
