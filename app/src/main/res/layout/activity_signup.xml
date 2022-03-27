@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:textSize="35dp"
         android:textStyle="bold"
-        tools:text="Create a new Acount!" />
+        tools:text="Create a new Account!" />
 
     <EditText
         android:id="@+id/email"
