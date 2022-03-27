@@ -23,25 +23,14 @@
         android:progress="60"
         android:progressDrawable="@drawable/custom_progress_bar" />
 
-    <Button
-        android:id="@+id/start_progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="33dp"
-        android:background="@drawable/edit_button_border"
-        android:text="Start Progress"
-        android:textAllCaps="false" />
-
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="350dp"
-        android:layout_marginBottom="388dp"
+        android:layout_marginEnd="353dp"
+        android:layout_marginBottom="387dp"
         android:fontFamily="@font/abeezee"
         android:text="4"
         android:textColor="#3F6371"
