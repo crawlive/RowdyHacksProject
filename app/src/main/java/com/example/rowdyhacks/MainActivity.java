@@ -1,8 +1,11 @@
 package com.example.rowdyhacks;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Contact> contacts;
 
     String[] dataset = {"Bethany Salazar","Aiden Johnson","Theresa Crawford","Joe Mama",
-            "Caitlin Coronado"};
+            "Joe Mama"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,27 +32,14 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, dataset);
         ListView listView = (ListView) findViewById(R.id.listview);
         listView.setAdapter(adapter);
-
-        //tvBtn = findViewById(R.id.tvBtn);
-        //tvItem = findViewById(R.id.tvItem);
-//        RecyclerView recyclerView =  findViewById(R.id.rvContacts);
-//        contacts = Contact.createContactsList(20);
-//        // Create adapter passing in the sample user data
-//        RecyclerViewAdapter adapter = new RecyclerViewAdapter(contacts);
-//        // Attach the adapter to the recyclerview to populate items
-//        rvContacts.setAdapter(adapter);
-//        // Set layout manager to position the items
-//        rvContacts.setLayoutManager(new LinearLayoutManager(this));
-//        //recyclerView = findViewById(R.id.recyclerView);
-        //populateData();
-        //setupAdapter();
-        //recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-         //   @Override
-          //  public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-           //     super.onScrolled(recyclerView, dx, dy);
-                //LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-          //  }
-        //});
+//        listView.getSelectedItem();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                int index = i;
+                Toast.makeText(MainActivity.this, "Selected Person " + dataset[index], Toast.LENGTH_LONG).show();
+            }
+        });
         /*swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
