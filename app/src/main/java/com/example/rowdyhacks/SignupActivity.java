@@ -16,9 +16,6 @@ public class SignupActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        //if (email != null) {
-        //    goMainActivity();
-        //}
         email = findViewById(R.id.email);
         passwd = findViewById(R.id.passwd);
         logIn = findViewById(R.id.logIn);
@@ -33,6 +30,9 @@ public class SignupActivity extends Activity{
                 //if the email and the passwd is not in the DB go to MainActivity
                 //goMainActivity();
                 //else print "the user already exists"
+                Intent myIntent = new Intent(SignupActivity.this, MainActivity.class);
+                myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(myIntent);
             }
         });
     }
