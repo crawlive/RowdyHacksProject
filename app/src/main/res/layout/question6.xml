@@ -20,7 +20,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:progress="67"
+        android:progress="17"
         android:progressDrawable="@drawable/custom_progress_bar" />
 
     <TextView
@@ -29,10 +29,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="355dp"
-        android:layout_marginBottom="388dp"
+        android:layout_marginEnd="351dp"
+        android:layout_marginBottom="387dp"
         android:fontFamily="@font/abeezee"
-        android:text="4"
+        android:text="2"
         android:textColor="#3F6371"
         android:textSize="20sp" />
 
@@ -58,7 +58,7 @@
         android:layout_marginStart="101dp"
         android:layout_marginTop="194dp"
         android:fontFamily="@font/abeezee"
-        android:text="Create a password"
+        android:text="What's your last name?"
         android:textColor="#3F6371"
         android:textSize="18sp" />
 
@@ -85,7 +85,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="293dp"
+        android:layout_marginTop="291dp"
         android:background="@drawable/edit_button_border"
         android:text="OK ✓"
         android:textSize="16sp" />
@@ -99,7 +99,7 @@
         android:layout_marginStart="197dp"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/abeezee"
-        android:text="67% completed"
+        android:text="17% completed"
         android:textColor="#3F6371"
         android:textSize="16sp" />
 </RelativeLayout>

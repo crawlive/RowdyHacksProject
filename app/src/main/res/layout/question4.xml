@@ -13,16 +13,16 @@
 
     <Spinner
         android:id="@+id/knownlang2"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginEnd="21dp"
-        android:background="@drawable/edit_dropdown_border"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginEnd="9dp"
+
         android:minHeight="48dp"
         android:spinnerMode="dropdown" />
 
@@ -35,7 +35,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:progress="60"
+        android:progress="68"
         android:progressDrawable="@drawable/custom_progress_bar" />
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_marginEnd="353dp"
         android:layout_marginBottom="387dp"
         android:fontFamily="@font/abeezee"
-        android:text="4"
+        android:text="5"
         android:textColor="#3F6371"
         android:textSize="20sp" />
 
@@ -73,24 +73,7 @@
         android:layout_marginStart="101dp"
         android:layout_marginTop="194dp"
         android:fontFamily="@font/abeezee"
-        android:text="What languages can you speak?"
-        android:textColor="#3F6371"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="86dp"
-        android:background="@drawable/edit_text_border"
-        android:ems="10"
-        android:fontFamily="@font/abeezee"
-        android:inputType="textPersonName"
-        android:text="Type your answer here..."
+        android:text="What language can you speak?"
         android:textColor="#3F6371"
         android:textSize="18sp" />
 
@@ -115,7 +98,7 @@
         android:layout_marginStart="197dp"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/abeezee"
-        android:text="60% completed"
+        android:text="68% completed"
         android:textColor="#3F6371"
         android:textSize="16sp" />
 </RelativeLayout>

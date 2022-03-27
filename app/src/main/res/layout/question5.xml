@@ -11,6 +11,20 @@
     android:rotationY="0"
     tools:context=".MainActivity">
 
+    <Spinner
+        android:id="@+id/knownlang3"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="1dp"
+
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
@@ -20,7 +34,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:progress="80"
+        android:progress="85"
         android:progressDrawable="@drawable/custom_progress_bar" />
 
     <TextView
@@ -32,7 +46,7 @@
         android:layout_marginEnd="354dp"
         android:layout_marginBottom="388dp"
         android:fontFamily="@font/abeezee"
-        android:text="5"
+        android:text="6"
         android:textColor="#3F6371"
         android:textSize="20sp" />
 
@@ -58,23 +72,7 @@
         android:layout_marginStart="101dp"
         android:layout_marginTop="194dp"
         android:fontFamily="@font/abeezee"
-        android:text="What languages do you want to learn?"
-        android:textColor="#3F6371"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="247dp"
-        android:layout_marginEnd="60dp"
-        android:background="@drawable/edit_text_border"
-        android:ems="10"
-        android:fontFamily="@font/abeezee"
-        android:inputType="textPersonName"
-        android:text="Type your answer here..."
+        android:text="What language do you want to learn?"
         android:textColor="#3F6371"
         android:textSize="18sp" />
 
@@ -99,7 +97,7 @@
         android:layout_marginStart="197dp"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/abeezee"
-        android:text="80% completed"
+        android:text="85% completed"
         android:textColor="#3F6371"
         android:textSize="16sp" />
 </RelativeLayout>

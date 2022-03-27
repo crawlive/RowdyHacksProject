@@ -10,7 +10,7 @@
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/drawable/edit_text_border.xml" value="0.2435" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3525" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/activity_main.xml" value="0.2140625" />
-        <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/activity_signup.xml" value="0.25" />
+        <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/activity_signup.xml" value="0.375" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/finished.xml" value="0.25" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/item_loading.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/item_row.xml" value="0.25" />
@@ -18,8 +18,9 @@
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/question1.xml" value="0.25" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/question2.xml" value="0.2375" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/question3.xml" value="0.2375" />
-        <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/question4.xml" value="0.5" />
+        <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/question4.xml" value="0.25" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/question5.xml" value="0.25" />
+        <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/question6.xml" value="0.375" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/settings_activity.xml" value="0.25" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/layout/settings_activity2.xml" value="0.2375" />
         <entry key="..\:/Users/Cait/AndroidStudioProjects/RowdyHacks/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3525" />

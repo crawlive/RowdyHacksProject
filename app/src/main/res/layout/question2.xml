@@ -20,7 +20,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:progress="20"
+        android:progress="33"
         android:progressDrawable="@drawable/custom_progress_bar" />
 
     <TextView
@@ -32,7 +32,7 @@
         android:layout_marginEnd="356dp"
         android:layout_marginBottom="387dp"
         android:fontFamily="@font/abeezee"
-        android:text="2"
+        android:text="3"
         android:textColor="#3F6371"
         android:textSize="20sp" />
 
@@ -99,7 +99,7 @@
         android:layout_marginStart="197dp"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/abeezee"
-        android:text="20% completed"
+        android:text="33% completed"
         android:textColor="#3F6371"
         android:textSize="16sp" />
 </RelativeLayout>
