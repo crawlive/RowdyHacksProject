@@ -1,6 +1,7 @@
 package com.example.rowdyhacks;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,14 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Selected Person " + dataset[index], Toast.LENGTH_LONG).show();
             }
         });
-        /*swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                Log.i(TAG, "fetching new data!");
+        //swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            //@Override
+            //public void onRefresh() {
+               // Log.i(TAG, "fetching new data!");
                 //populateItemRows();
             }
-        });*/
-    }
+        //});
+   // }
 
     /*private void goSignUpActivity() {
         Intent i = new Intent(this, TextMessage.class);
