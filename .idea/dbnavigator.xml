@@ -17,22 +17,18 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="windows-1252" />
+      <charset value="UTF-8" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="129d1c7a-9d3e-48aa-ae83-47cbbd9df224">
-        <schema name="public" object-types="table, function, sequence, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="129d1c7a-9d3e-48aa-ae83-47cbbd9df224">
-      <console name="Connection" type="STANDARD" schema="public" session="Main" />
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -62,18 +58,15 @@
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
-
   <component name="DBNavigator.Project.ParserDiagnosticsManager">
     <diagnostics-history />
   </component>
-
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
-
     <connections>
-      <connection id="129d1c7a-9d3e-48aa-ae83-47cbbd9df224" active="true">
+      <connection id="129d1c7a-9d3e-48aa-ae83-47cbbd9df224" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
