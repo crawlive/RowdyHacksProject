@@ -10,7 +10,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.*;
@@ -18,12 +17,11 @@ import java.util.*;
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
     //Button tvBtn;
-    SwipeRefreshLayout swipeContainer;
+//    SwipeRefreshLayout swipeContainer;
     RecyclerView recyclerView;
     ArrayList<Contact> contacts;
 
-    String[] dataset = {"Bethany Salazar","Aiden Johnson","Theresa Crawford","Joe Mama",
-            "Joe Mama"};
+    String[] dataset = {"Bethany Salazar","Aiden Johnson","Theresa Crawford","Will Smith", "Doc Rob"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 int index = i;
                 Toast.makeText(MainActivity.this, "Selected Person " + dataset[index], Toast.LENGTH_LONG).show();
+
             }
         });
         /*swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
