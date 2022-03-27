@@ -10,7 +10,7 @@
         android:layout_width="320dp"
         android:layout_height="67dp"
         android:layout_weight="1"
-        android:text="TextView"
+        android:hint="User"
         app:layout_constraintEnd_toStartOf="@+id/tvBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
