@@ -3,6 +3,7 @@ package com.example.rowdyhacks;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,6 +22,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if (viewType == VIEW_TYPE_ITEM){
+            //also got to get context for the tvBtn
+            //tvBtn is for message
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_row, parent, false);
             return new ItemViewHolder(view);
         }
@@ -48,9 +51,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private class ItemViewHolder extends RecyclerView.ViewHolder {
         TextView tvItem;
+        //Button tvBtn;
         public ItemViewHolder(@NonNull View itemView){
             super(itemView);
             tvItem = itemView.findViewById(R.id.tvItem);
+            //tvBtn = itemView.findViewById(R.id.tvBtn);
         }
     }
     private class LoadingHolder extends RecyclerView.ViewHolder {
@@ -61,5 +66,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     private void populateItemRows (ItemViewHolder viewHolder, int position){
         String item = mHistory.get(position);
         viewHolder.tvItem.setText(item);
+        //viewHolder.tvBtn.setText(item);
     }
 }
