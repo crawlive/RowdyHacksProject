@@ -1,7 +1,7 @@
 # RowdyHacksProject: ImmersionIO
 
 ### MEMBERS AND ROLES:
-#### Bethany Salazar - 
+#### Bethany Salazar - Setting up hosting services and database. As well as helped in front end pages.
 #### Caitlin Coronado - 
 #### Aiden Johnson - 
 #### Theresa Crawford - Setting up hosting services and database. Building tables.
