@@ -3,7 +3,7 @@
 ### MEMBERS AND ROLES:
 #### Bethany Salazar - Setting up hosting services and database. As well as helped in front end pages.
 #### Caitlin Coronado - Designing UI for front-end pages and created logo.
-#### Aiden Johnson - 
+#### Aiden Johnson - wroking with UI and the functionality of the UI
 #### Theresa Crawford - Setting up hosting services and database. Building tables.
 
 ## Inspiration
