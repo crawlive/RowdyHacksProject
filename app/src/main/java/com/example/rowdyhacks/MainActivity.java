@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
-    Button tvBtn;
+    //Button tvBtn;
     SwipeRefreshLayout swipeContainer;
     RecyclerView recyclerView;
     RecyclerViewAdapter recyclerViewAdapter;
@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tvBtn = findViewById(R.id.tvBtn);
+        //tvBtn = findViewById(R.id.tvBtn);
+        //tvItem = findViewById(R.id.tvItem);
         recyclerView = findViewById(R.id.recyclerView);
         populateData();
         setupAdapter();
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             dataset.add("User: " + i);
             i++;
         }
+        dataset.add(null);
     }
     private void setupAdapter(){
         recyclerViewAdapter = new RecyclerViewAdapter(dataset);
