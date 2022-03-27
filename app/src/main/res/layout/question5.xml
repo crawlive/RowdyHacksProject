@@ -20,6 +20,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:progress="80"
         android:progressDrawable="@drawable/custom_progress_bar" />
 
     <Button
@@ -39,10 +40,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="351dp"
-        android:layout_marginBottom="387dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginBottom="388dp"
         android:fontFamily="@font/abeezee"
-        android:text="1 "
+        android:text="5"
         android:textColor="#3F6371"
         android:textSize="20sp" />
 
@@ -68,7 +69,7 @@
         android:layout_marginStart="101dp"
         android:layout_marginTop="194dp"
         android:fontFamily="@font/abeezee"
-        android:text="What's your first name?"
+        android:text="What languages do you want to learn?"
         android:textColor="#3F6371"
         android:textSize="18sp" />
 
@@ -78,8 +79,8 @@
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="234dp"
-        android:layout_marginEnd="61dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginEnd="60dp"
         android:background="@drawable/edit_text_border"
         android:ems="10"
         android:fontFamily="@font/abeezee"
@@ -95,7 +96,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="291dp"
+        android:layout_marginTop="306dp"
         android:background="@drawable/edit_button_border"
         android:text="OK ✓"
         android:textSize="16sp" />
@@ -109,7 +110,7 @@
         android:layout_marginStart="197dp"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/abeezee"
-        android:text="0% completed"
+        android:text="80% completed"
         android:textColor="#3F6371"
         android:textSize="16sp" />
 </RelativeLayout>
