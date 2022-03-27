@@ -18,13 +18,5 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
-    <string-array name="languages">
-        <item>English</item>
-        <item>Spanish</item>
-        <item>French</item>
-        <item>Russian</item>
-        <item>German</item>
-        <item>Japanese</item>
-        <item>Italian</item>
-    </string-array>
+    <string name="action_settings">Settings</string>
 </resources>

@@ -1,32 +1,52 @@
 package com.example.rowdyhacks;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import java.util.ArrayList;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
-    Button tvBtn;
+    //Button tvBtn;
     SwipeRefreshLayout swipeContainer;
+    RecyclerView recyclerView;
+    ArrayList<Contact> contacts;
 
+    String[] dataset = {"Bethany Salazar","Aiden Johnson","Theresa Crawford","Joe Mama",
+            "Joe Mama"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tvBtn = findViewById(R.id.tvBtn);
 
-        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, dataset);
+        ListView listView = (ListView) findViewById(R.id.listview);
+        listView.setAdapter(adapter);
+//        listView.getSelectedItem();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                int index = i;
+                Toast.makeText(MainActivity.this, "Selected Person " + dataset[index], Toast.LENGTH_LONG).show();
+            }
+        });
+        /*swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 Log.i(TAG, "fetching new data!");
                 //populateItemRows();
             }
-        });
+        });*/
     }
 
     /*private void goSignUpActivity() {
@@ -34,11 +54,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
-    int i = 0;
+    private void populateData(){
+        int i = 0;
         while (i < 10){
-            mHistory.add("User: " + i);
+            dataset.add("User: " + i);
             i++;
         }
+        dataset.add(null);
+    }
+    private void setupAdapter(){
+        recyclerViewAdapter = new RecyclerViewAdapter(dataset);
+        recyclerView.setAdapter(recyclerViewAdapter);
+    }*/
+    /*
         mHistory.add(null);
     private void populateItemRows (RecyclerViewAdapter.ItemViewHolder viewHolder, int position){
         String item = mHistory.get(position);
