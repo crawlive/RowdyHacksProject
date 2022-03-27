@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="bottom"
     android:orientation="vertical"
-    tools:context="SignupActivity">
+    tools:context=".SignupActivity">
 
     <TextView
         android:id="@+id/createnewac"
@@ -24,7 +23,6 @@
         android:layout_height="69dp"
         android:ems="10"
         android:hint="Email"
-
         android:inputType="textEmailAddress" />
 
     <EditText
