@@ -30,18 +30,25 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, "onClick login button");
-
+                Intent myIntent = new Intent(LoginActivity.this, MainActivity.class);
+                myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(myIntent);
                 //String username = userText.getText().toString();
                 //String password = pwdText.getText().toString();
                 //prob need to parse the info maybe in the go method or here
-                goMainActivity();
+                //goMainActivity();
             }
         });
+
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, "onClick sign up button");
-                goSignUpActivity();
+                Intent myIntent = new Intent(LoginActivity.this, SignupActivity.class);
+                myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(myIntent);
+
+                //goSignUpActivity();
             }
         });
     }
@@ -54,8 +61,8 @@ public class LoginActivity extends Activity {
     }
     private void goSignUpActivity() {
         Intent i = new Intent(this, SignupActivity.class);
-        startActivity(i);
-        //startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        //startActivity(i);
+        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
         finish();
     }
 }

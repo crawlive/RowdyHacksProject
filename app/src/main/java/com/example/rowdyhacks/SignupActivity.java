@@ -15,13 +15,14 @@ public class SignupActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        if (email != null) {
-            goMainActivity();
-        }
+        setContentView(R.layout.activity_signup);
+        //if (email != null) {
+        //    goMainActivity();
+        //}
         email = findViewById(R.id.email);
         passwd = findViewById(R.id.passwd);
         logIn = findViewById(R.id.logIn);
+
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +31,7 @@ public class SignupActivity extends Activity{
                 String password = passwd.getText().toString();
                 //prob need to parse the info maybe in the go method or here
                 //if the email and the passwd is not in the DB go to MainActivity
-                goMainActivity();
+                //goMainActivity();
                 //else print "the user already exists"
             }
         });
