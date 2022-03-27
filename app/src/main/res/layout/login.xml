@@ -1,53 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="bottom"
-    android:orientation="vertical"
+    android:background="#13232E"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="2"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:srcCompat="@drawable/logo3" />
 
     <EditText
         android:id="@+id/userText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="135dp"
         android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
         android:ems="10"
-        android:hint="username" />
+        android:fontFamily="@font/abeezee"
+        android:hint="Username or email"
+        android:textColor="#3F6371" />
 
     <EditText
         android:id="@+id/pwdText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="340dp"
         android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
         android:ems="10"
-        android:hint="password"
-        android:inputType="textPassword" />
+        android:fontFamily="@font/abeezee"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#3F6371" />
 
     <Button
         android:id="@+id/loginBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="148dp"
         android:layout_weight="1"
+        android:background="@drawable/edit_button_border"
+        android:fontFamily="@font/abeezee"
         android:text="Login" />
 
     <Button
         android:id="@+id/signUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
         android:layout_marginEnd="0dp"
+        android:layout_marginBottom="259dp"
         android:layout_weight="1"
+        android:background="@drawable/edit_button_border"
+        android:fontFamily="@font/abeezee"
         android:nestedScrollingEnabled="false"
         android:text="Sign Up" />
 
-</LinearLayout>
+</RelativeLayout>

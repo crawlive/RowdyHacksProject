@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="bottom"
-    android:orientation="vertical"
+    android:background="#13232E"
     tools:context=".SignupActivity">
 
     <TextView
         android:id="@+id/createnewac"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="10dp"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -19,25 +21,42 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="218dp"
+        android:background="@drawable/edit_text_border"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/passwd"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="252dp"
+        android:background="@drawable/edit_text_border"
         android:ems="10"
         android:hint="Password" />
 
     <Button
         android:id="@+id/logIn"
-        android:layout_width="match_parent"
-        android:layout_height="93dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="-2dp"
         android:textAllCaps="false"
         tools:text="Create New Account" />
 
-</LinearLayout>
+</RelativeLayout>
